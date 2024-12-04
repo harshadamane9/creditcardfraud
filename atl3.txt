@@ -1,0 +1,19 @@
+//ui.r
+library(shiny)
+shinyUI(fluidPage(
+  titlePanel(title="This is my first shiny app,hello shiny!"),
+  sidebarLayout(position="right",
+    sidebarPanel(h3("this is side bar panel"),h4("widget4"),h5("widget5")),
+    mainPanel("this is the main panel text,output is displayed here")
+  )
+)
+  
+)
+
+//server.r
+library(shiny)
+shinyServer(
+  function(input,output){
+    
+  }
+)
